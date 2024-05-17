@@ -63,7 +63,7 @@ body{
     bottom: 331px;
     margin-right: auto;
     margin-left: auto;
-    display: none;
+    /* display: none; */
 }
 #draw-message{
     font-size: 100px;
@@ -100,6 +100,7 @@ body{
 
 @media (width <= 600px){
     #winner-message{
+        margin-top: 50px;
         font-size: 80px;
     }
     #draw-message{
@@ -126,6 +127,7 @@ body{
 
 @media (width <= 440px){
     #winner-message{
+        margin-top: 92px;
         font-size: 55px;
     }
     #draw-message{
@@ -152,6 +154,7 @@ body{
 
 @media (width <= 370px){
     #winner-message{
+        margin-top: 130px;
         font-size: 45px;
     }
     #draw-message{
