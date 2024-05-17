@@ -104,6 +104,7 @@ body{
         font-size: 80px;
     }
     #draw-message{
+        margin-top: 50px;
         font-size: 80px;
     }
     #game-main-box{
@@ -131,6 +132,7 @@ body{
         font-size: 55px;
     }
     #draw-message{
+        margin-top: 103px;
         font-size: 45px;
     }
     #game-main-box{
@@ -158,6 +160,7 @@ body{
         font-size: 45px;
     }
     #draw-message{
+        margin-top: 135px;
         font-size: 35px;
     }
     #game-main-box{
