@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:  BlinkMacSystemFont;
+}
+body{
+    background-color: #90E0EF;
+    text-align: center;
+}
+#t-heading{
+    font-size: 70px;
+    text-align: center;
+}
+#t-sub-heading{
+    font-family: "jacquard 12" , system-ui;
+    font-size: 30px;
+    text-align: right;
+    position:relative;
+    bottom: 33px;
+    left: 120px;
+}
+#game-main-box{
+    position: relative;
+    bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 480px;
+    width: 480px;
+}
+.box{
+    height: 150px;
+    width: 150px;
+    border: none;
+    background-color: #fff;
+    color: #ff6700;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;    
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#resetbtn{
+    height: 30px;
+    width: 140px;
+    font-size: 20px;
+    background-color: #ffd500;
+    font-weight:700;
+}
+#winner-message{
+    font-size: 100px;
+    color:cornflowerblue;
+    background-color: white;
+    border-radius: 30px;
+    border: 3px solid #ffd166;
+    width: fit-content;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;    
+    padding: 10px;
+    position: relative;
+    bottom: 331px;
+    margin-right: auto;
+    margin-left: auto;
+    display: none;
+}
+#draw-message{
+    font-size: 100px;
+    color:cornflowerblue;
+    background-color: white;
+    border-radius: 30px;
+    border: 3px solid #ffd166;
+    width: fit-content;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;    
+    padding: 10px;
+    position: relative;
+    bottom: 331px;
+    margin-right: auto;
+    margin-left: auto;
+    display: none;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+#newgame{
+    height: 30px;
+    width: 140px;
+    font-size: 20px;
+    background-color: #ffd500;
+    font-weight:700;
+}
+.button-js{
+    position: relative;
+    bottom: 140px;
+}
