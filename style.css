@@ -2,10 +2,12 @@
     margin: 0px;
     padding: 0px;
     font-family:  BlinkMacSystemFont;
+    box-sizing: border-box;
 }
 body{
     background-color: #90E0EF;
     text-align: center;
+    overflow-x: hidden;
 }
 #t-heading{
     font-size: 70px;
@@ -94,4 +96,108 @@ body{
 .button-js{
     position: relative;
     bottom: 140px;
+}
+
+@media (width <= 600px){
+    #winner-message{
+        font-size: 80px;
+    }
+    #draw-message{
+        font-size: 80px;
+    }
+    #game-main-box{
+        height: 400px;
+        width: 400px;
+    }
+    .box{
+        height: 125px;
+        width: 125px;
+    }
+    #t-heading{
+        font-size: 50px;
+    }
+    #t-sub-heading{
+        font-size: 20px;
+        position:relative;
+        bottom: 33px;
+        left: 90px;
+    }
+}
+
+@media (width <= 440px){
+    #winner-message{
+        font-size: 55px;
+    }
+    #draw-message{
+        font-size: 45px;
+    }
+    #game-main-box{
+        height: 340px;
+        width: 340px;
+    }
+    .box{
+        height: 100px;
+        width: 100px;
+    }
+    #t-heading{
+        font-size: 50px;
+    }
+    #t-sub-heading{
+        font-size: 20px;
+        position:relative;
+        bottom: 33px;
+        left: 90px;
+    }
+}
+
+@media (width <= 370px){
+    #winner-message{
+        font-size: 45px;
+    }
+    #draw-message{
+        font-size: 35px;
+    }
+    #game-main-box{
+        height: 280px;
+        width: 280px;
+    }
+    .box{
+        height: 83px;
+        width: 83px;
+    }
+    #t-heading{
+        font-size: 40px;
+    }
+    #t-sub-heading{
+        font-size: 15px;
+        position:relative;
+        bottom: 33px;
+        left: 90px;
+    }
+}
+
+@media (width <= 300px){
+    #winner-message{
+        font-size: 45px;
+    }
+    #draw-message{
+        font-size: 35px;
+    }
+    #game-main-box{
+        height: 280px;
+        width: 280px;
+    }
+    .box{
+        height: 70px;
+        width: 70px;
+    }
+    #t-heading{
+        font-size: 20px;
+    }
+    #t-sub-heading{
+        font-size: 8px;
+        position:relative;
+        bottom: 33px;
+        left: 90px;
+    }
 }
