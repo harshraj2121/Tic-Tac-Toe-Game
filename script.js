@@ -35,7 +35,7 @@ input.forEach((box) => {
             drawmsg();
             // winnermsg.style.display = "none";
         }
-        else {
+        else{
             ifwinner();
         }
         
