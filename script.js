@@ -27,6 +27,7 @@ input.forEach((box) => {
                 turn = false;
             } else {
                 box.innerText = "O";  //it's Y's turn
+                
                 turn = true;
             }
         }
