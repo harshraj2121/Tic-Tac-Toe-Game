@@ -33,9 +33,13 @@ input.forEach((box) => {
         }
         if(count >= 9 ){
             drawmsg();
-            winnermsg.style.display = "none";
+            // winnermsg.style.display = "none";
         }
-        ifwinner();
+        else {
+            ifwinner();
+        }
+        
+        
     });
 });
 
