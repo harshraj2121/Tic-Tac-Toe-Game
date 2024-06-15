@@ -31,12 +31,10 @@ input.forEach((box) => {
                 turn = true;
             }
         }
-        if(count >= 9 ){
-            drawmsg();
-            // winnermsg.style.display = "none";
-        }
-        else{
             ifwinner();
+
+        if(count >= 9 && !winnermsg.style.display){
+            drawmsg();
         }
         
         
