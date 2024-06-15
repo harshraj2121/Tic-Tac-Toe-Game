@@ -34,7 +34,7 @@ input.forEach((box) => {
 
         ifwinner();
 
-        if(count >= 9 && winnermsg.style.display = "none"){
+        if(count >= 9 && !winnermsg.style.display = "block"){
             drawmsg();
         }
         
