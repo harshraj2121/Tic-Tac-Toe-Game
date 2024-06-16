@@ -20,39 +20,34 @@ let winpatterns = [
 
 input.forEach((box) => {
     box.addEventListener("click", () => {
-        count++;
-        if(box.innerText === ""){
-            if(turn) {
-                box.innerText = "X"; //it's X's turn
+        if (box.innerText === "") {
+            count++;
+            if (turn) {
+                box.innerText = "X"; // it's X's turn
                 turn = false;
             } else {
-                box.innerText = "O";  //it's Y's turn
-                
+                box.innerText = "O"; // it's Y's turn
                 turn = true;
             }
+            if (ifwinner()) {
+                return;
+            }
+            if (count >= 9) {
+                drawmsg();
+            }
         }
-        if(count >= 9 ){
-            drawmsg();
-            // winnermsg.style.display = "none";
-        }
-        else{
-            ifwinner();
-        }
-        
-        
     });
 });
 
-
-// if winner funcrion
-let ifwinner = () =>{
-    for (let pattern of winpatterns){
+// if winner function
+let ifwinner = () => {
+    for (let pattern of winpatterns) {
         const val1position = input[pattern[0]].innerText;
         const val2position = input[pattern[1]].innerText;
         const val3position = input[pattern[2]].innerText;
 
-        if(val1position != "" && val2position != "" && val3position != ""){
-            if(val1position === val2position && val2position === val3position){
+        if (val1position !== "" && val2position !== "" && val3position !== "") {
+            if (val1position === val2position && val2position === val3position) {
                 console.log("Winner is " + val1position);
                 winnermsg.style.display = "block";
                 winnermsg.innerText = "Winner is " + val1position;
@@ -64,24 +59,26 @@ let ifwinner = () =>{
                 input.forEach((inputs) => {
                     inputs.disabled = true;
                 });
+                return true; // Indicates a winner has been found
             }
         }
     }
+    return false; // No winner found
 };
 
 // reset and new game button functions
 resetbtn.addEventListener("click", () => {
     resetgame();
-})
-newgamebtn.addEventListener("click", () =>{
+});
+newgamebtn.addEventListener("click", () => {
     resetgame();
-})
+});
 
-let resetgame = () =>{
+let resetgame = () => {
     count = 0;
-    winnermsg.style.display ="none";
+    winnermsg.style.display = "none";
     input.forEach(box => {
-        box.innerText ="";
+        box.innerText = "";
         jsbuttons.forEach(button => {
             button.classList.remove("button-js");
         });
@@ -91,7 +88,7 @@ let resetgame = () =>{
         turn = true;
         drawmessage.style.display = "none";
     });
-}
+};
 
 // draw function
 let drawmsg = () => {
@@ -99,4 +96,4 @@ let drawmsg = () => {
     jsbuttons.forEach(button => {
         button.classList.add("button-js");
     });
-}
+};
