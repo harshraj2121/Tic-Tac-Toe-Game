@@ -5,13 +5,15 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #90E0EF;
+    background-color: #fefae0;
     text-align: center;
     overflow-x: hidden;
+    height: 100vh;
 }
 #t-heading{
     font-size: 70px;
     text-align: center;
+    color: #6b705c;
 }
 #t-sub-heading{
     font-family: "jacquard 12" , system-ui;
@@ -20,6 +22,7 @@ body{
     position:relative;
     bottom: 33px;
     left: 120px;
+    color: #283618;
 }
 #game-main-box{
     position: relative;
@@ -36,7 +39,7 @@ body{
     width: 150px;
     border: none;
     background-color: #fff;
-    color: #ff6700;
+    color: #2b2d42;
     border-radius: 15px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;    
     font-size: 70px;
@@ -47,12 +50,14 @@ body{
     height: 30px;
     width: 140px;
     font-size: 20px;
-    background-color: #ffd500;
+    background-color: #d4a373;
     font-weight:700;
+    color: #283618;
 }
 #winner-message{
     font-size: 100px;
-    color:cornflowerblue;
+    color: #2b2d42;
+    font-weight: 600;
     background-color: white;
     border-radius: 30px;
     border: 3px solid #ffd166;
@@ -67,7 +72,8 @@ body{
 }
 #draw-message{
     font-size: 100px;
-    color:cornflowerblue;
+    color:#2b2d42;
+    font-weight: 600;
     background-color: white;
     border-radius: 30px;
     border: 3px solid #ffd166;
@@ -90,8 +96,9 @@ body{
     height: 30px;
     width: 140px;
     font-size: 20px;
-    background-color: #ffd500;
+    background-color: #d4a373;
     font-weight:700;
+    color: #283618;
 }
 .button-js{
     position: relative;
